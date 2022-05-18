@@ -7,7 +7,7 @@ body{
     display: flex;
     justify-content: space-between;
     /* border: 2px solid black; */
-    padding: 2%;
+    padding: 2% 7%;
 }
 .nav .logo{
     display: flex;
@@ -27,6 +27,7 @@ body{
 }
 .nav .section #secItem{
     padding: 0 7%;
+    font-weight: 200;
 }
 
 .nav .sign{
@@ -39,7 +40,7 @@ body{
     border: none;
     background-color: #ffffff;
     font-size: 18px;
-    width: 150px;
+    width: 125px;
     height: 45px;
 }
 .nav .sign .btn1{
@@ -48,7 +49,55 @@ body{
     background-color: #ffffff;
     color: #F53855;
     font-size: 18px;
-    width: 150px;
+    width: 125px;
     height: 45px;
     border-radius: 50px;
+}
+.frontCover{
+    display: flex;
+
+}
+.frontCover .content{
+    width: 50%;
+}
+.frontCover .content .title{
+    font-size: 50px;
+    margin: 5% 15%;
+    font-weight: 900;
+}
+.frontCover .content .title #lightText{
+    font-weight: normal;
+}
+.frontCover .content .subText{
+    font-size: 15px;
+    margin: 5% 15%;
+}
+.frontCover .content .subText #darkText{
+    font-weight: 1000;
+}
+
+.frontCover .content .gsBtnContainer{
+    margin: 5% 15%;
+}
+.frontCover .content .gsBtnContainer .gsBtn{
+    border: 2px solid #F53838;
+    background-color: #F53838;
+    color: #ffffff;
+    font-family: 'Rubik', sans-serif;
+    width: 250px;
+    height: 60px;
+    border-radius: 10px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    box-shadow:  0px 30px 70px 0.11px #F53838;
+
+}
+
+.frontCover .img{
+    height: 380px;
+    width: 610px;
+}
+.frontCover .img img{
+    height: 100%;
+    width: 100%;
 }
