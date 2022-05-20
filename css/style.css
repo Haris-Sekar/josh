@@ -1,13 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap');
 
 *{
     margin: 0px;
     padding:0px;
-}
+    scroll-behavior: smooth;
 
+}
 body{
     font-family: 'Rubik', sans-serif;
 }
+a{
+    text-align: none;
+    text-decoration: none;
+    color: black;
+}
+
+/* ---------------------------------------- */
+             /* Navbar Styles */
+/* ---------------------------------------- */
+
 .nav{
     display: flex;
     justify-content: space-between;
@@ -30,10 +42,19 @@ body{
     width: fit-content;
     align-items: center;
 }
+
 .nav .section #secItem{
-    padding: 0 7%;
+    margin: 0 7%;
+    padding:1% 0;
     font-weight: 200;
+    transition: 0.3s ease-in-out transform;
+
 }
+
+.nav .section #secItem:hover{
+    transform: scale(1.1);
+}
+  
 
 .nav .sign{
     display: flex;
@@ -58,6 +79,11 @@ body{
     height: 45px;
     border-radius: 50px;
 }
+
+/* ---------------------------------------- */
+             /* FrontCover Styles */
+/* ---------------------------------------- */
+
 .frontCover{
     display: flex;
 
@@ -107,6 +133,12 @@ body{
     width: 100%;
 }
 
+
+/* ---------------------------------------- */
+             /* Service Data Styles */
+/* ---------------------------------------- */
+
+
 .serviceDataContainer{
     display: flex;
     border: 2px solid white;
@@ -155,6 +187,11 @@ body{
         display: none;
     }
 }
+
+/* ---------------------------------------- */
+             /* Features Styles */
+/* ---------------------------------------- */
+
 
 .features{
     display: flex;
@@ -215,6 +252,12 @@ body{
     height: 100%;
     width: 100%;
 }
+
+
+/* ---------------------------------------- */
+             /* Pricing Styles */
+/* ---------------------------------------- */
+
 
 .pricing{
     background-color: #F8F8F8;
@@ -327,12 +370,18 @@ body{
     border-color: #F53838;
 } 
 
+
+/* ---------------------------------------- */
+             /* Global Styles */
+/* ---------------------------------------- */
+
+
 .global{
     background: linear-gradient(180deg, #F8F8F8 -45.04%, rgba(248, 248, 248, 0) 88.56%);}
 .global .title{
     font-size: 35px;
-    font-weight: 900; 
-    width: 25%;
+    font-weight: 600; 
+    width: 30%;
     margin: auto;
     text-align: center;
     padding-top: 5%;
@@ -367,6 +416,12 @@ body{
     height: 100%;
     object-fit: cover;
 }
+
+
+/* ---------------------------------------- */
+            /* Testimonial Styles */
+/* ---------------------------------------- */
+
 
 .customers{
     background: linear-gradient(180deg, #F8F8F8 -45.04%, rgba(248, 248, 248, 0) 88.56%);}
@@ -427,7 +482,7 @@ body{
 }
 
 .customers .carosle .reviews .review .profile .userDetails #userName{
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 900;
 }
 .customers .carosle .reviews .review .profile .userDetails #userLocation{
@@ -457,6 +512,13 @@ body{
 .customers .carosle .btnContainer1{ 
     transform: rotate(180deg);
 } 
+
+
+
+/* ---------------------------------------- */
+             /* Subscribe Styles */
+/* ---------------------------------------- */
+
 
 .subscribe .subCon{ 
     display: flex; 
@@ -495,6 +557,13 @@ body{
     letter-spacing: 1px;
     box-shadow:  0px 30px 70px 0.11px #F53838; 
 }
+
+
+
+/* ---------------------------------------- */
+             /* Footer Styles */
+/* ---------------------------------------- */
+
 
 .footerAbt {
     margin: 15% 10% 0 15%; 
