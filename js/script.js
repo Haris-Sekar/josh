@@ -71,4 +71,62 @@ review2.addEventListener("mouseleave",(event)=>{
     review2.style.boxShadow = "none";
 
 })
-console.log(document.getElementById('plan2').clientHeight);
+const review3 = document.getElementById('review3');
+
+review3.addEventListener("mouseover",(event)=>{
+    review3.style.borderColor = '#F53838';
+    review3.style.boxShadow = "2px 50px 70px 0px #cac0c0";
+
+});
+review3.addEventListener("mouseleave",(event)=>{
+    review3.style.borderColor = "#DDDDDD";
+    review3.style.boxShadow = "none";
+
+})
+
+
+// carousel scripts
+document.getElementById('review3').style.display="none";
+var index = 0;
+const arr = ['review','review1','review2','review3'];
+var last = 3;
+var next = 0;
+const parent = document.getElementById('reviews');
+
+function prev() {
+    const pre = document.getElementById(arr[next]);
+    const load = document.getElementById(arr[last]);
+    // pre.className = "review--hidden";
+    // load.className = "review";    
+    pre.style.display = "none";
+    load.style.display = "block";
+    // index++;
+    // var preData = pre.innerHTML;
+    // pre.innerHTML = load.innerHTML;
+    // load.innerHTML = preData;  
+    (index == 3) ? index = 0 : index++;
+    (next == 3) ? next = 0 : next++;
+    (last == 3) ? last = 0 : last++;
+    console.log(index);
+    console.log("next "+next+" last "+last);
+    parent.appendChild(pre);
+} 
+
+function nextsl() {
+    next = index;
+    // (index + 2 > 3) ? last = 0: last = index+2; 
+    const pre = document.getElementById(arr[next]);
+    const load = document.getElementById(arr[last]);
+    // pre.className = "review--hidden";
+    // load.className = "review";    
+    pre.style.display = "none";
+    load.style.display = "block";
+    // index++;
+    (index == 3) ? index = 0 : index++;
+    (next == 3) ? next = 0 : next++;
+    (last == 3) ? last = 0 : last++;
+    console.log(index);
+    console.log("next "+next+" last "+last);
+    parent.appendChild(load);
+   
+}
